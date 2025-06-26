@@ -1,0 +1,226 @@
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-bg: #ffffff;
+  --color-dark: #111111;
+  --color-light: #f9f9f9;
+  --color-accent: #c59c6c;
+
+  --text-color: #222;
+  --text-light: #666;
+  --btn-bg: #111;
+  --btn-text: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(to bottom, #2e2e2e, #1e1e1e);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+ul {
+  list-style: none;
+}
+header{
+    position: relative;
+    height: 60vh;
+    background: url('./assets/house-5148865_1280.jpg') center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 60px;
+    z-index: 1;
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul a{
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+nav ul a:hover{
+    background-color: var(--color-bg);
+    border-radius: 20px;
+    color: var(--color-dark);
+    padding: 5px;
+}
+.nav-left button{
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+.hero-content{
+    text-align: center;
+    margin-bottom: 60px;
+}
+section{
+    border-radius: 100px 100px 0 0;
+    padding: 80px 60px;
+    max-width: 99%;
+    margin: -30px auto;
+    z-index: 3;
+    position: relative;   
+}
+
+.about{
+    background-color: var(--color-light);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    
+}
+
+.about-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* for responsiveness */
+    
+}
+.text {
+    flex: 1 1 50%;
+
+}
+
+.about .text h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1.4; 
+}
+
+.about .text p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about .image {
+    flex: 1 1 40%; 
+}
+
+.about .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    
+}
+.buttons{
+    margin-top: 2rem;
+    display: flex;
+    gap: 10px;
+}
+.buttons .btn{
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 12px 30px;
+    border-radius: 25px;
+}
+.buttons .btn:hover{
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+}
+
+.buttons .btn.secondary{
+    background-color: var(--color-bg);
+    color: var(--text-color);
+}
+.buttons .btn.secondary:hover{
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+}
+/* =======project Section======= */
+.Project {
+  padding: 80px 60px;
+  color: #fff;
+  position: relative;
+  height: 100%;
+}
+
+.Project-content {
+  max-width: 600px;
+}
+
+.Project h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.Project p {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 20px;
+}
+
+.Project .btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 10px;
+  transition: background 0.3s;
+}
+
+.Project .btn:hover {
+  background: var(--color-accent);
+}
+
+.Project .btn.secondary {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.boxing-house{
+    background: url('assets/house-5148865_1280.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+}
+.concrete-house{
+    /* background: url('assets/Modern-Architecture-and-Nature-1024x585.jpeg') center/cover no-repeat; */
+    background-blend-mode: overlay;
+}
